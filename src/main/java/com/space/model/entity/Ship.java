@@ -1,7 +1,6 @@
 package com.space.model.entity;
 
 import com.space.model.ShipType;
-import com.sun.istack.internal.NotNull;
 
 import javax.persistence.*;
 import java.util.Date;
@@ -12,7 +11,6 @@ import java.util.Objects;
 public class Ship {
     @Id
     @GeneratedValue (strategy = GenerationType.IDENTITY)
-    @NotNull ()
     @Column (name = "id")
     private int id; //BIGINT(20)  NOT NULL AUTO_INCREMENT,
     @Column (name = "name")
